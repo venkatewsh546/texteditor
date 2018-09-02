@@ -1,17 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
+using Android;
 using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Views.InputMethods;
 using Android.Widget;
-using Newtonsoft.Json;
-using static texteditor.CommonMethods;
+using static EncryptTextEditor.CommonMethods;
 
-namespace texteditor
+namespace EncryptTextEditor
 {
-    [Activity(Label = "TextActivity")]
+    [Activity(Label = "EncryptTextEditor")]
     public class TextActivity : Activity
     {
         String SelectedFile;
@@ -51,12 +50,6 @@ namespace texteditor
                 Notepad.Text = "";
             }
         }
-
-        //private void SaveButtonClick(object sender, EventArgs e)
-        //{
-        //    SaveToFile();
-
-        //}
 
         private void SaveToFile()
         {

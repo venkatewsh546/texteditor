@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("texteditor.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("EncryptTextEditor.Resource", IsApplication=true)]
 
-namespace texteditor
+namespace EncryptTextEditor
 {
 	
 	

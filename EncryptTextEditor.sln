@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "texteditor", "texteditor\texteditor.csproj", "{94A3039F-FDBA-4C09-93FD-5B4C125B2C96}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptTextEditor", "texteditor\EncryptTextEditor.csproj", "{94A3039F-FDBA-4C09-93FD-5B4C125B2C96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
