@@ -89,7 +89,7 @@ namespace texteditor
             }
             catch
             {
-                throw;
+                cipherText = enpasscode;
             }
             return cipherText;
         }

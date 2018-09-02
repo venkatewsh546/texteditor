@@ -37,6 +37,7 @@ namespace texteditor
 
            // SaveButton.Click += SaveButtonClick;
 
+           
             if (SelectedFile.Length != 0 && DecryptedKey.Length != 0)
             { 
                 Notepad.Text = DecryptPassword(GetDataFromFile(SelectedFile), DecryptedKey);
@@ -72,12 +73,12 @@ namespace texteditor
 
             if (DecryptedKey.Length != 0)
             {
-                File.WriteAllText(myFile.AbsolutePath, Notepad.Text);
+                File.WriteAllText(myFile.AbsolutePath, EncryptPassword(Notepad.Text, DecryptedKey));
                 myFile.Dispose();
             }
             else
             {
-                File.WriteAllText(myFile.AbsolutePath, EncryptPassword(Notepad.Text, DecryptedKey));
+                File.WriteAllText(myFile.AbsolutePath, EncryptPassword(Notepad.Text, "0000"));
                 myFile.Dispose();
             }
         }
@@ -91,6 +92,7 @@ namespace texteditor
             alert.SetButton("Save", (c, ev) =>
             {
                 SaveToFile();
+                Finish();
             });
             alert.SetButton2("CANCEL", (c, ev) => {
                 Finish();
