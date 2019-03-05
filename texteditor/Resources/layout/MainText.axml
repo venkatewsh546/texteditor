@@ -13,7 +13,7 @@
             android:layout_weight="1"
             android:inputType="textMultiLine"
             android:layout_width="match_parent"
-            android:minLines="2"
+            android:minLines="1"
             android:singleLine="false"
             android:layout_height="wrap_content" />
     <!-- <Button

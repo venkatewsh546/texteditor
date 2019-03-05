@@ -3,30 +3,19 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:theme="@style/Theme.AppCompat"
-        android:layout_height="wrap_content">
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Click For File"
-            android:id="@+id/SelectFileEditText" />
-    </android.support.design.widget.TextInputLayout>
-    <android.support.design.widget.TextInputLayout
-        android:theme="@style/Theme.AppCompat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <EditText
-            android:inputType="textPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Key"
-            android:id="@+id/DecryptKeyeditText" />
-    </android.support.design.widget.TextInputLayout>
-    <Button
-        android:text="Show"
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/ShowFileDataButton" />
+        android:hint="Click to Select File"
+        android:id="@+id/SelectFileEditText" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ShowFileDataButton"
+		android:text="Create/open File"	/>
+	<ListView
+        android:id="@+id/DataListView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical" />
 </LinearLayout>
